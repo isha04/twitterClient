@@ -451,6 +451,7 @@
 		1BCC58EDDC7BC33F53B2E8BEB92914E1 /* FIRAuthUserDefaultsStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAuthUserDefaultsStorage.m; path = Firebase/Auth/Source/FIRAuthUserDefaultsStorage.m; sourceTree = "<group>"; };
 		1BF50036FE7E545DFB99939304489D37 /* FIRReachabilityChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRReachabilityChecker.h; path = Firebase/Core/Private/FIRReachabilityChecker.h; sourceTree = "<group>"; };
 		1C08B3BCC38CADD2158842CC79817A4D /* Pods-twitterClientByIsha-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-twitterClientByIsha-frameworks.sh"; sourceTree = "<group>"; };
+		1C8A6FF06FE0960F36DD086CD9DA51DD /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = iOS/TwitterKit.framework; sourceTree = "<group>"; };
 		1DBD39B25BCDF3F34BC0414F36FF217E /* nanopb-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-prefix.pch"; sourceTree = "<group>"; };
 		1DC8AE657130333D49FBAE12EC077F81 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DE43F42820E118F6E9364717971CDA4 /* FIROptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIROptions.m; path = Firebase/Core/FIROptions.m; sourceTree = "<group>"; };
@@ -462,7 +463,6 @@
 		20A54E750C04F968E782EEC5D0D967BB /* GTMSessionUploadFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionUploadFetcher.h; path = Source/GTMSessionUploadFetcher.h; sourceTree = "<group>"; };
 		20D6BC11420CD6CD4F5241160CE55480 /* Pods-twitterClientByIsha-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-twitterClientByIsha-dummy.m"; sourceTree = "<group>"; };
 		2324FAA0011B5C5FDF5F4A4BE0230775 /* FIRVerifyClientRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRVerifyClientRequest.h; path = Firebase/Auth/Source/RPCs/FIRVerifyClientRequest.h; sourceTree = "<group>"; };
-		23361236D497105381F50B1F8FBABA62 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = iOS/TwitterKit.framework/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		23C55837C66F1B69A7B1E50D01FE5862 /* FIRVerifyPasswordResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRVerifyPasswordResponse.h; path = Firebase/Auth/Source/RPCs/FIRVerifyPasswordResponse.h; sourceTree = "<group>"; };
 		2421C90B588924805A1E16A51186338D /* FIRAppAssociationRegistration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAppAssociationRegistration.h; path = Firebase/Core/Private/FIRAppAssociationRegistration.h; sourceTree = "<group>"; };
 		257DDF3B66E33092B0A828D0D0ACBE95 /* SwifterUsers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwifterUsers.swift; path = Sources/SwifterUsers.swift; sourceTree = "<group>"; };
@@ -683,13 +683,13 @@
 		C4E5F1903413540063125216BCB9790F /* FIRSendVerificationCodeResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRSendVerificationCodeResponse.h; path = Firebase/Auth/Source/RPCs/FIRSendVerificationCodeResponse.h; sourceTree = "<group>"; };
 		C7A12EE90A75E1B24A85B190167CD18A /* Pods-twitterClientByIsha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-twitterClientByIsha.debug.xcconfig"; sourceTree = "<group>"; };
 		C7C0EBE44E16DE7E8A2F82CDCD8365D3 /* Pods-twitterClientByIsha-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-twitterClientByIsha-acknowledgements.plist"; sourceTree = "<group>"; };
+		C7D06E405BBEB0870ED3EE3883882AF2 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = iOS/TwitterKit.framework/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		C8AC94079DF7AE7FC086EE5D851B7A12 /* FIROAuthProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIROAuthProvider.m; path = Firebase/Auth/Source/AuthProviders/OAuth/FIROAuthProvider.m; sourceTree = "<group>"; };
 		C927FC677ED2D5D0506955A93E53833D /* Operator++.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Operator++.swift"; path = "Sources/Operator++.swift"; sourceTree = "<group>"; };
 		C9462829ED7C965A9EFED3A54D9C52C4 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/Utils.swift; sourceTree = "<group>"; };
 		C972CF8D8C8E041DF3DA3A46EAC3342F /* SwifterFavorites.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwifterFavorites.swift; path = Sources/SwifterFavorites.swift; sourceTree = "<group>"; };
 		C9B74442B882A793A9B9422331A3EF8C /* FIRAdditionalUserInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAdditionalUserInfo.h; path = Firebase/Auth/Source/Public/FIRAdditionalUserInfo.h; sourceTree = "<group>"; };
 		C9C76DE370A02DFEE1BFD167BF776155 /* FIRBundleUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRBundleUtil.h; path = Firebase/Core/Private/FIRBundleUtil.h; sourceTree = "<group>"; };
-		C9F2133548889F1A79C36CB7E4C2A3CC /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterShareExtensionUIResources.bundle; path = iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle; sourceTree = "<group>"; };
 		CAFE2CB91D47EA5BB8EC11464ECC1AA1 /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_encode.c; sourceTree = "<group>"; };
 		CB8516FE90FFE66091029FD05DD299B7 /* FIRSecureTokenResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRSecureTokenResponse.h; path = Firebase/Auth/Source/RPCs/FIRSecureTokenResponse.h; sourceTree = "<group>"; };
 		CD19C461B34FE4F98A7838E77648F21C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
@@ -741,7 +741,6 @@
 		EE3C27C0E56E8D5FB11E2F0F1FCC1F04 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE41DBA38AD05DF86E24BC11F253F3C6 /* FIREmailLinkSignInResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIREmailLinkSignInResponse.m; path = Firebase/Auth/Source/RPCs/FIREmailLinkSignInResponse.m; sourceTree = "<group>"; };
 		EE957423564718D595F4E543EF5F9A71 /* SwifterGIF.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwifterGIF.swift; path = Sources/SwifterGIF.swift; sourceTree = "<group>"; };
-		EFFD75C6348DA1863C74FA8001411AE5 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = iOS/TwitterKit.framework; sourceTree = "<group>"; };
 		F04E0A1A9118101E501A3FB250C6AF4B /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		F18A678BDF008D1CE9A9348F204872BF /* FIRAuthInternalErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuthInternalErrors.h; path = Firebase/Auth/Source/FIRAuthInternalErrors.h; sourceTree = "<group>"; };
 		F1A3930468E1B8D659ED42DF98225C7E /* Pods-twitterClientByIsha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-twitterClientByIsha.release.xcconfig"; sourceTree = "<group>"; };
@@ -833,22 +832,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09766A23E5AE180269192BC5FEBEFE2A /* TwitterKit */ = {
-			isa = PBXGroup;
-			children = (
-				65135E41525E53768D8E6507E3240398 /* Frameworks */,
-				E39861B0CDAA0D1A8575C7D7EF601A2D /* Resources */,
-			);
-			name = TwitterKit;
-			path = TwitterKit;
-			sourceTree = "<group>";
-		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				FC6BBEC9DC9D79D4947D9D28067ED0CE /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		128579F7CC4F19062C11DCD942465761 /* TwitterKit */ = {
+			isa = PBXGroup;
+			children = (
+				EC3C07A6BC16B0EEB60F91DC4D01A479 /* Frameworks */,
+				863BB03965FC9A2669C6354EEDC57BED /* Resources */,
+			);
+			name = TwitterKit;
+			path = TwitterKit;
 			sourceTree = "<group>";
 		};
 		131FCED91698B6C98C6ABA31EE1DA743 /* FirebaseAuth */ = {
@@ -1176,14 +1175,6 @@
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		65135E41525E53768D8E6507E3240398 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EFFD75C6348DA1863C74FA8001411AE5 /* TwitterKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		6D17F53DA6DE8338E5580EE450F52FEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1261,6 +1252,14 @@
 				963014C622518B6C957F8BE2813D94DE /* Products */,
 				37B6C1772A7FFBB3264DE7579289D9BC /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		863BB03965FC9A2669C6354EEDC57BED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C7D06E405BBEB0870ED3EE3883882AF2 /* TwitterKitResources.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		8CBB92C69936A10F7FB0331DC99E187F /* Pods-twitterClientByIsha */ = {
@@ -1411,7 +1410,7 @@
 				98DA213A0816E367559DE3C9E72AD526 /* nanopb */,
 				A14F7303CD0D2DAB70583B421AD7E093 /* Swifter */,
 				2FCCE7B011A2C23F84C7ABFBDB775BC9 /* TwitterCore */,
-				09766A23E5AE180269192BC5FEBEFE2A /* TwitterKit */,
+				128579F7CC4F19062C11DCD942465761 /* TwitterKit */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1428,15 +1427,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/GTMSessionFetcher";
-			sourceTree = "<group>";
-		};
-		E39861B0CDAA0D1A8575C7D7EF601A2D /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				23361236D497105381F50B1F8FBABA62 /* TwitterKitResources.bundle */,
-				C9F2133548889F1A79C36CB7E4C2A3CC /* TwitterShareExtensionUIResources.bundle */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		E6709AD0413ADB93471B7BA7875D4F14 /* Core */ = {
@@ -1459,6 +1449,14 @@
 			children = (
 			);
 			name = decode;
+			sourceTree = "<group>";
+		};
+		EC3C07A6BC16B0EEB60F91DC4D01A479 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C8A6FF06FE0960F36DD086CD9DA51DD /* TwitterKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		ED13C4E6549EDE10F6BDCA1BE6437A3A /* Frameworks */ = {

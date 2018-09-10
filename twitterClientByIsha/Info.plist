@@ -16,27 +16,20 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>twitterkit-Fme0pbK6V2En0LiRW9LavVyip</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>None</string>
-			<key>CFBundleURLSchemes</key>
-			<array/>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>None</string>
-		</dict>
-	</array>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>twitterkit-Fme0pbK6V2En0LiRW9LavVyip</string>
+                </array>
+            </dict>
+        </array>
+        <key>LSApplicationQueriesSchemes</key>
+        <array>
+            <string>twitter</string>
+            <string>twitterauth</string>
+        </array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSApplicationQueriesSchemes</key>

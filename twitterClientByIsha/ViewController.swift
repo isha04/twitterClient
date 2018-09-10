@@ -12,25 +12,69 @@ import Alamofire
 import FirebaseAuth
 import TwitterKit
 
-
 class ViewController: UIViewController {
     
     var twitterSession: TWTRSession?
     var name: String? = ""
     var username: String? = ""
+    
     var email: String? = ""
+    
     var profileImage: UIImage?
     
+    let twitterButton = UIButton(type: .system)
     
-    func handleTwitterButtonTapped() {
+    @objc func handleTwitterButtonTapped() {
+        
+        let store = TWTRTwitter.sharedInstance().sessionStore
+        
+        let lastSession = store.session()
+        
+        // This checks if you've logged in using Twitter. If it's nil then it'll show login page else just prints the email. This also tells you, you've user logged in so that you can show something else instead of login screen.
+        guard lastSession == nil else {
+            self.fetchUserEmailAddress()
+            print(lastSession!.userID, lastSession!.authToken)
+            fetchTweet()
+            return
+        }
+        
         TWTRTwitter.sharedInstance().logIn { (session, err) in
             if let err = err {
                 self.alertWithTitle(title: "Error", message: "Failed to log in with Twitter with error: \(err)")
                 return
             }
             guard let session = session else { return }
+            
             self.twitterSession = session
-            self.signIntoFirebaseWithTwitter()
+            
+            self.fetchUserEmailAddress()
+        }
+    }
+    
+    // Code for fetching user email address.
+    func fetchUserEmailAddress() {
+        let client = TWTRAPIClient.withCurrentUser()
+        
+        client.requestEmail { (email, error) in
+            guard error == nil else {
+                print(error!)
+                return
+            }
+            
+            print("Email Address: \(email ?? "")")
+        }
+    }
+    
+    func fetchTweet() {
+        let client = TWTRAPIClient.withCurrentUser()
+        
+        client.loadTweet(withID: "20") { (tweet, error) in
+            guard error == nil else {
+                print(error!)
+                return
+            }
+            
+            print(tweet!.author, tweet!.createdAt, tweet!.text)
         }
     }
     
@@ -101,16 +145,25 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(logInButton)
-        handleTwitterButtonTapped()
-        getTweets()
+        
+        view.addSubview(twitterButton)
+        twitterButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        twitterButton.setTitle("Log in using Twitter", for: .normal)
+        
+        NSLayoutConstraint.activate([
+            twitterButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            twitterButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)])
+        
+        twitterButton.addTarget(self, action: #selector(handleTwitterButtonTapped), for: .touchUpInside)
+        
     }
     
     let logInButton = TWTRLogInButton(logInCompletion: { session, error in
         if (session != nil) {
             let authToken = session?.authToken
             let authTokenSecret = session?.authTokenSecret
-            print("this is token nd secret", authToken as! String, authTokenSecret as! String)
+            print("this is token nd secret", authToken ?? "", authTokenSecret ?? "")
         } else {
                 // ...
         }

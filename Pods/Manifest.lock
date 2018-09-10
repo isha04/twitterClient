@@ -30,8 +30,8 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - Swifter (2.2.1)
-  - TwitterCore (3.1.0)
-  - TwitterKit (3.3.0):
+  - TwitterCore (3.2.0)
+  - TwitterKit (3.4.0):
     - TwitterCore (>= 3.1.0)
 
 DEPENDENCIES:
@@ -39,7 +39,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Swifter (from `https://github.com/mattdonnelly/Swifter.git`)
-  - TwitterKit
+  - TwitterKit (~> 3.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -75,9 +75,9 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Swifter: e52e5ad13fcbe18b57887eb3e88b7eb2681a5c45
-  TwitterCore: 644d59e75abccb26cf0a9050d2c4dea0e5412241
-  TwitterKit: a2e60ddcedbf54091eac6f27685ca7a87681e1d7
+  TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
+  TwitterKit: bc7bd086b9b724a1d888745a054e1d0b1ecc4f3f
 
-PODFILE CHECKSUM: db0c1d5bf7c3bf5aca62593117fb06cfa65695ab
+PODFILE CHECKSUM: 721b400e801c8944f183e7053c48f647a2d5b430
 
 COCOAPODS: 1.5.3
