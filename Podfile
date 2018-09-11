@@ -7,9 +7,7 @@ target 'twitterClientByIsha' do
 
   pod 'TwitterKit', '~> 3.0'
   pod 'Alamofire'
-  pod 'Firebase/Auth'
-  pod 'Firebase/Core'
-  pod 'Swifter', :git => 'https://github.com/mattdonnelly/Swifter.git'
+  #pod 'Swifter', :git => 'https://github.com/mattdonnelly/Swifter.git'
 
   # Pods for twitterClientByIsha
 

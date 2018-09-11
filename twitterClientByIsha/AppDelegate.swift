@@ -8,7 +8,6 @@
 
 import UIKit
 import TwitterKit
-import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,8 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-       FirebaseApp.configure()
-        TWTRTwitter.sharedInstance().start(withConsumerKey: "Fme0pbK6V2En0LiRW9LavVyip", consumerSecret: "x2S3nYBrng1bMDdR5bBhxGG7SQFyTbhJLcD9GNzffVAC3vyR7Z")
+       //FirebaseApp.configure()
+        TWTRTwitter.sharedInstance().start(withConsumerKey: "Vhil6IGejrT3P7hRdctknLGy6", consumerSecret: "DKyV1tHj3VTL4PYwclp1oDfW2MVryuKayZcCKWNqwyozuOIfPv")
         return true
     }
     

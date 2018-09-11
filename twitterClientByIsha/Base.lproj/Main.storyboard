@@ -20,10 +20,57 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="fbV-fO-Azj" kind="show" identifier="showTweet" id="jCp-2T-2ax"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="29"/>
+            <point key="canvasLocation" x="136.80000000000001" y="28.335832083958024"/>
+        </scene>
+        <!--Tweets View Controller-->
+        <scene sceneID="Hne-R3-vfv">
+            <objects>
+                <viewController id="fbV-fO-Azj" customClass="tweetsViewController" customModule="twitterClientByIsha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yem-u5-Z9c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Db-VW-ucu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tweets" rowHeight="100" id="n4A-HN-ylh">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n4A-HN-ylh" id="2MT-rl-vfl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="fbV-fO-Azj" id="2zJ-fJ-YpW"/>
+                                    <outlet property="delegate" destination="fbV-fO-Azj" id="AGL-6H-Lti"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1Db-VW-ucu" secondAttribute="bottom" id="YLn-U1-4HN"/>
+                            <constraint firstItem="1Db-VW-ucu" firstAttribute="top" secondItem="Yem-u5-Z9c" secondAttribute="top" id="Yhl-NH-9FO"/>
+                            <constraint firstItem="1Db-VW-ucu" firstAttribute="trailing" secondItem="YaL-ZI-eFe" secondAttribute="trailing" id="gja-ft-JJd"/>
+                            <constraint firstItem="1Db-VW-ucu" firstAttribute="leading" secondItem="YaL-ZI-eFe" secondAttribute="leading" id="syL-YV-2db"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YaL-ZI-eFe"/>
+                    </view>
+                    <connections>
+                        <outlet property="tweetTable" destination="1Db-VW-ucu" id="TH0-ua-ePo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v8f-4p-iFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1224.8" y="28.335832083958024"/>
         </scene>
     </scenes>
 </document>

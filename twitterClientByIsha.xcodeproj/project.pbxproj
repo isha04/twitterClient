@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0835365B214308FF00A19DEF /* tweetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0835365A214308FF00A19DEF /* tweetsViewController.swift */; };
-		085E2009214698830052E9A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 085E2008214698820052E9A7 /* GoogleService-Info.plist */; };
 		08D37A1B2142691400A0DCC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D37A1A2142691400A0DCC4 /* AppDelegate.swift */; };
 		08D37A1D2142691400A0DCC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D37A1C2142691400A0DCC4 /* ViewController.swift */; };
 		08D37A202142691400A0DCC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08D37A1E2142691400A0DCC4 /* Main.storyboard */; };
@@ -19,7 +18,6 @@
 
 /* Begin PBXFileReference section */
 		0835365A214308FF00A19DEF /* tweetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tweetsViewController.swift; sourceTree = "<group>"; };
-		085E2008214698820052E9A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		08D37A172142691300A0DCC4 /* twitterClientByIsha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twitterClientByIsha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08D37A1A2142691400A0DCC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08D37A1C2142691400A0DCC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,7 +71,6 @@
 				08D37A212142692200A0DCC4 /* Assets.xcassets */,
 				08D37A232142692200A0DCC4 /* LaunchScreen.storyboard */,
 				08D37A262142692200A0DCC4 /* Info.plist */,
-				085E2008214698820052E9A7 /* GoogleService-Info.plist */,
 			);
 			path = twitterClientByIsha;
 			sourceTree = "<group>";
@@ -158,7 +155,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				08D37A252142692200A0DCC4 /* LaunchScreen.storyboard in Resources */,
-				085E2009214698830052E9A7 /* GoogleService-Info.plist in Resources */,
 				08D37A222142692200A0DCC4 /* Assets.xcassets in Resources */,
 				08D37A202142691400A0DCC4 /* Main.storyboard in Resources */,
 			);
@@ -193,10 +189,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-twitterClientByIsha/Pods-twitterClientByIsha-resources.sh",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -211,22 +209,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-twitterClientByIsha/Pods-twitterClientByIsha-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/Swifter/Swifter.framework",
 				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swifter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -388,7 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AMB9948HDW;
+				DEVELOPMENT_TEAM = BVY7P9CUB8;
 				INFOPLIST_FILE = twitterClientByIsha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -407,7 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AMB9948HDW;
+				DEVELOPMENT_TEAM = BVY7P9CUB8;
 				INFOPLIST_FILE = twitterClientByIsha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
